@@ -518,7 +518,7 @@ public class AlarmActivity extends AppCompatActivity
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
         }
 
-        mCurrentHourColor = Utils.getCurrentHourColor();
+        mCurrentHourColor = Utils.getCurrentHourColor(this);
         getWindow().setBackgroundDrawable(new ColorDrawable(mCurrentHourColor));
     }
 
